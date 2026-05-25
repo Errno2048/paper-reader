@@ -1,0 +1,18 @@
+{
+  "name": "paper-reader-skills",
+  "metadata": {
+    "description": "Academic paper reading and auditing skills for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "paper-skills",
+      "description": "Multi-agent paper reading: three agents collaborate to produce a comprehensive, reproducibility-focused report from PDF or Markdown input",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/paper-reader"
+      ]
+    }
+  ]
+}
