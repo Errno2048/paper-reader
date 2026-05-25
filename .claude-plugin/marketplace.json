@@ -1,5 +1,9 @@
 {
   "name": "paper-reader-skills",
+  "owner": {
+    "name": "Errno2048",
+    "email": "86658328+Errno2048@users.noreply.github.com"
+  },
   "metadata": {
     "description": "Academic paper reading and auditing skills for Claude Code",
     "version": "1.0.0"

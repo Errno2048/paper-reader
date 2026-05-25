@@ -135,6 +135,8 @@ SKILL DIRECTORY: $SKILL_DIR
 
 Execute Phase 0 ONLY. Read the full paper, read the generic template at $SKILL_DIR/templates/generic_cs_template.md, extend it with domain-specific guiding questions, and write template_extended.md. Do NOT fill in any content — only questions and structural guidance.
 
+⚠️ Respect your role boundaries (see reviewer_agent.md §⛔). You are the Reviewer — do NOT fill template content or produce Reader/Questioner reports.
+
 When done, send a message to the orchestrator: 'Phase 0 complete: template_extended.md written.'"""
 )
 ```
@@ -170,6 +172,8 @@ SKILL DIRECTORY: $SKILL_DIR
 
 Execute Phase 1 ONLY. Read the full paper at <paper_dir>/paper.md. Read the template at <paper_dir>/template_extended.md. Fill every section with accurate, detailed content from the paper. Use exact numbers and direct quotes. Write reader_report.md.
 
+⚠️ Respect your role boundaries (see reader_agent.md §⛔). You are the Reader — do NOT perform Reviewer or Questioner tasks.
+
 When done, send a message to the orchestrator: 'Phase 1 complete: reader_report.md written.'"""
 )
 ```
@@ -203,6 +207,8 @@ SKILL DIRECTORY: $SKILL_DIR
 Execute Phase 2. Read the abstract at <paper_dir>/abstract.md. Read the Reader's report at <paper_dir>/reader_report.md. Read the reproducibility checklist at $SKILL_DIR/references/reproducibility_checklist.md.
 
 Ask the Reader questions (via SendMessage, max 20) to fill any gaps needed to reproduce the paper. When done, produce your independent report at <paper_dir>/questioner_report.md following the same template structure.
+
+⚠️ Respect your role boundaries (see questioner_agent.md §⛔). You are the Questioner — do NOT read the full paper, do NOT produce final_report.
 
 When done, send a message to the orchestrator: 'Phase 2 complete: questioner_report.md written.'"""
 )
